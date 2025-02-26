@@ -25,8 +25,9 @@ node1.next = node2
 node2.next = node3
 node3.next = node4
 node4.next = node5
+solution = Solution()
 
-print(Solution.reverseList([node1, node2, node3, node4, node5], node1))
+print(solution.reverseList(node1))
 
 # cur = node1
 # while cur.next is not None:
