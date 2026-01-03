@@ -8,11 +8,11 @@ def selection_sort(arr: list):
         index_min = i
 
         for j in range(i + 1, len(arr)):
+            iter_counter += 1
             if arr[j] < arr[index_min]:
                 index_min = j
 
         if index_min != i:
-            iter_counter += 1
             temp = arr[i]
             arr[i] = arr[index_min]
             arr[index_min] = temp
